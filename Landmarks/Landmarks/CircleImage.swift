@@ -14,7 +14,7 @@ struct CircleImage: View {
             .clipShape(Circle())
         //overlay to use image border
             .overlay {
-                Circle().stroke(.gray, lineWidth: 4)
+                Circle().stroke(.white, lineWidth: 4)
             }
         //add shadow with radius
             .shadow(radius: 7)
