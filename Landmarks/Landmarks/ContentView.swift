@@ -9,11 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Turtle Rock")
-        //customize text view
-            .font(.title)
-            
-    }
+            VStack {
+                Text("Turtle Rock")
+                //customize text
+                    .font(.title)
+                Text("Joshua Tree National Park")
+                    .font(.subheadline)
+            }
+        }
 }
 
 #Preview {
