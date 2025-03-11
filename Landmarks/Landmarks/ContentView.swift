@@ -15,6 +15,9 @@ struct ContentView: View {
         VStack {
             MapView()
                 .frame(height: 300)
+            
+            CircleImage()
+            
             VStack(alignment: .leading) {
                 Text("Turtle Rock")
                 //customize text
