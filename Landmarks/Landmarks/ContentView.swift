@@ -17,6 +17,9 @@ struct ContentView: View {
                 .frame(height: 300)
             
             CircleImage()
+            //to layer image view on top of map
+                .offset(y: -130)
+                .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
                 Text("Turtle Rock")
