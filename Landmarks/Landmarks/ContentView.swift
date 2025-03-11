@@ -11,21 +11,24 @@ struct ContentView: View {
     var body: some View {
         //align views
         //vertical stack
-        VStack(alignment: .leading) {
-            Text("Turtle Rock")
-            //customize text
-                .font(.title)
-            //horizontal stack
-            HStack {
-                Text("Joshua Tree National Park")
-                    .font(.subheadline)
-                Spacer()
-                
-                Text("California")
-                    .font(.subheadline)
+        
+        VStack {
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                //customize text
+                    .font(.title)
+                //horizontal stack
+                HStack {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Spacer()
+                    
+                    Text("California")
+                        .font(.subheadline)
+                }
             }
+            .padding()
         }
-        .padding()
     }
 }
 
