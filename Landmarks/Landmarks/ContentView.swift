@@ -13,6 +13,8 @@ struct ContentView: View {
         //vertical stack
         
         VStack {
+            MapView()
+                .frame(height: 300)
             VStack(alignment: .leading) {
                 Text("Turtle Rock")
                 //customize text
