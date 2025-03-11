@@ -12,6 +12,10 @@ struct CircleImage: View {
         Image("turtlerock")
         //clipshape to image
             .clipShape(Circle())
+        //overlay to use image border
+            .overlay {
+                Circle().stroke(.gray, lineWidth: 4)
+            }
     }
 }
 
