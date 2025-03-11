@@ -12,7 +12,7 @@ struct ContentView: View {
         Text("Turtle Rock")
         //customize text view
             .font(.title)
-            .foregroundColor(.green)
+            
     }
 }
 
