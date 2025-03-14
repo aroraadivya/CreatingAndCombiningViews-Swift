@@ -16,8 +16,12 @@ struct LandmarkList: View {
         NavigationSplitView {
             //to make list dynamic
             List(landmarks){landmark in
-                //to show all lists
-                LandmarkRow(landmark: landmark)
+                NavigationLink {
+                    LandmarkDetail()
+                } label: {
+                    //to show all lists
+                    LandmarkRow(landmark: landmark)
+                }
             }
             .navigationTitle("Landmarks")
         }detail: {
