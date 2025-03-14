@@ -19,6 +19,7 @@ struct LandmarkList: View {
                 //to show all lists
                 LandmarkRow(landmark: landmark)
             }
+            .navigationTitle("Landmarks")
         }detail: {
             Text("Select a Landmark")
         }
