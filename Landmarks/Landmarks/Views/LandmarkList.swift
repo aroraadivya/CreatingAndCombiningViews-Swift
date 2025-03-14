@@ -13,10 +13,14 @@ struct LandmarkList: View {
 //            LandmarkRow(landmark: landmarks[0])
 //            LandmarkRow(landmark: landmarks[1])
 //        }
-        //to make list dynamic
-        List(landmarks){landmark in
-            //to show all lists
-            LandmarkRow(landmark: landmark)
+        NavigationSplitView {
+            //to make list dynamic
+            List(landmarks){landmark in
+                //to show all lists
+                LandmarkRow(landmark: landmark)
+            }
+        }detail: {
+            Text("Select a Landmark")
         }
     }
 }
