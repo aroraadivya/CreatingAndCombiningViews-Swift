@@ -23,12 +23,19 @@ struct LandmarkRow: View {
     }
 }
 
-#Preview("Turtle Rock") {
-    //landmark parameter
-    LandmarkRow(landmark: landmarks[0])
-}
+//#Preview("Turtle Rock") {
+//    //landmark parameter
+//    LandmarkRow(landmark: landmarks[0])
+//}
+//
+////second preview macro that uses the the second element in the landmarks array.
+//#Preview("Salmon") {
+//    LandmarkRow(landmark: landmarks[1])
+//}
 
-//second preview macro that uses the the second element in the landmarks array.
-#Preview("Salmon") {
-    LandmarkRow(landmark: landmarks[1])
+#Preview {
+    Group {
+        LandmarkRow(landmark: landmarks[0])
+        LandmarkRow(landmark: landmarks[1])
+    }
 }
