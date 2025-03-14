@@ -27,3 +27,8 @@ struct LandmarkRow: View {
     //landmark parameter
     LandmarkRow(landmark: landmarks[0])
 }
+
+//second preview macro that uses the the second element in the landmarks array.
+#Preview {
+    LandmarkRow(landmark: landmarks[1])
+}
