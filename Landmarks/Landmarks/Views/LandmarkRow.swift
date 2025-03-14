@@ -12,7 +12,8 @@ struct LandmarkRow: View {
     
     var body: some View {
         HStack {
-            Text("Hello, World!")
+            //modify text view to use landmark property name
+            Text(landmark.name)
         }
     }
 }
