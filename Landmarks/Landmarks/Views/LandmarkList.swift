@@ -15,7 +15,8 @@ struct LandmarkList: View {
 //        }
         //to make list dynamic
         List(landmarks, id:\.id){landmark in
-            
+            //to show all lists
+            LandmarkRow(landmark: landmark)
         }
     }
 }
