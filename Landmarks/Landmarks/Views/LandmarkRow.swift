@@ -29,6 +29,6 @@ struct LandmarkRow: View {
 }
 
 //second preview macro that uses the the second element in the landmarks array.
-#Preview {
+#Preview("Salmon") {
     LandmarkRow(landmark: landmarks[1])
 }
