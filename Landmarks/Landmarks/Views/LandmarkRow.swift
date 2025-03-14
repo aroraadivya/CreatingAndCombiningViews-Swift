@@ -23,7 +23,7 @@ struct LandmarkRow: View {
     }
 }
 
-#Preview {
+#Preview("Turtle Rock") {
     //landmark parameter
     LandmarkRow(landmark: landmarks[0])
 }
