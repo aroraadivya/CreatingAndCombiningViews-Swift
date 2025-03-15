@@ -27,7 +27,7 @@ struct LandmarkDetail: View {
                     .font(.title)
                 //horizontal stack
                 HStack {
-                    Text("Joshua Tree National Park")
+                    Text(landmark.park)
                     Spacer()
                     Text("California")
                 }
