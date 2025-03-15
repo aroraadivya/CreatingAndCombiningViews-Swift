@@ -13,7 +13,7 @@ struct LandmarkDetail: View {
     var body: some View {
 //        Text("Hello, World!")
         VStack {
-            MapView()
+            MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)
             
             CircleImage()
