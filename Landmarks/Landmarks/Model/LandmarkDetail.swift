@@ -11,39 +11,41 @@ struct LandmarkDetail: View {
     var landmark: Landmark
     
     var body: some View {
-//        Text("Hello, World!")
-        VStack {
-            MapView(coordinate: landmark.locationCoordinate)
-                .frame(height: 300)
-            
-            CircleImage(image: landmark.image)
-            //to layer image view on top of map
-                .offset(y: -130)
-                .padding(.bottom, -130)
-            
-            VStack(alignment: .leading) {
-                Text(landmark.name)
-                //customize text
-                    .font(.title)
-                //horizontal stack
-                HStack {
-                    Text(landmark.park)
-                    Spacer()
-                    Text(landmark.state)
-                }
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+        //        Text("Hello, World!")
+        ScrollView {
+            VStack {
+                MapView(coordinate: landmark.locationCoordinate)
+                    .frame(height: 300)
                 
-                Divider()
+                CircleImage(image: landmark.image)
+                //to layer image view on top of map
+                    .offset(y: -130)
+                    .padding(.bottom, -130)
                 
-                Text("About \(landmark.name)")
-                    .font(.title2)
-                Text(landmark.description)
+                VStack(alignment: .leading) {
+                    Text(landmark.name)
+                    //customize text
+                        .font(.title)
+                    //horizontal stack
+                    HStack {
+                        Text(landmark.park)
+                        Spacer()
+                        Text(landmark.state)
+                    }
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
                     
+                    Divider()
+                    
+                    Text("About \(landmark.name)")
+                        .font(.title2)
+                    Text(landmark.description)
+                    
+                }
+                .padding()
+                
+                Spacer()
             }
-            .padding()
-            
-            Spacer()
         }
     }
 }
