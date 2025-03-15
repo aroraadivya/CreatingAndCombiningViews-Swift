@@ -43,8 +43,7 @@ struct LandmarkDetail: View {
                     
                 }
                 .padding()
-                
-                Spacer()
+//                Spacer()
             }
         }
     }
