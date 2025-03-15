@@ -17,7 +17,7 @@ struct LandmarkList: View {
             //to make list dynamic
             List(landmarks){landmark in
                 NavigationLink {
-                    LandmarkDetail()
+                    LandmarkDetail(landmark: landmark)
                 } label: {
                     //to show all lists
                     LandmarkRow(landmark: landmark)
