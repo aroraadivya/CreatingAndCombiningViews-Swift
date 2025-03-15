@@ -36,9 +36,9 @@ struct LandmarkDetail: View {
                 
                 Divider()
                 
-                Text("About Turtle Rock")
+                Text("About \(landmark.name)")
                     .font(.title2)
-                Text("Descriptive text goes here")
+                Text(landmark.description)
                     
             }
             .padding()
