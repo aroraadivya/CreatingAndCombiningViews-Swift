@@ -29,7 +29,7 @@ struct LandmarkDetail: View {
                 HStack {
                     Text(landmark.park)
                     Spacer()
-                    Text("California")
+                    Text(landmark.state)
                 }
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
