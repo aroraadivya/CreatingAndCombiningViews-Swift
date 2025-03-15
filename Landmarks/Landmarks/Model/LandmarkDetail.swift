@@ -16,7 +16,7 @@ struct LandmarkDetail: View {
             MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)
             
-            CircleImage()
+            CircleImage(image: landmark.image)
             //to layer image view on top of map
                 .offset(y: -130)
                 .padding(.bottom, -130)
