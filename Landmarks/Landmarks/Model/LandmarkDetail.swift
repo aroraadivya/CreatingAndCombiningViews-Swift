@@ -22,7 +22,7 @@ struct LandmarkDetail: View {
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text(landmark.name)
                 //customize text
                     .font(.title)
                 //horizontal stack
