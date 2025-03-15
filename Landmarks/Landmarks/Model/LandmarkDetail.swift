@@ -10,7 +10,6 @@ import SwiftUI
 struct LandmarkDetail: View {
     var body: some View {
 //        Text("Hello, World!")
-        //contents from content view
         VStack {
             MapView()
                 .frame(height: 300)
