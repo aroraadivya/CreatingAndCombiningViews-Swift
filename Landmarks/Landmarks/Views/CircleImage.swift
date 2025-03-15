@@ -11,9 +11,9 @@ struct CircleImage: View {
     var image: Image
     
     var body: some View {
-//        image
+        image
         
-        Image("turtlerock")
+//        Image("turtlerock")
         //clipshape to image
             .clipShape(Circle())
         //overlay to use image border
